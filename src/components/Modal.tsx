@@ -9,12 +9,13 @@ export default function Modal() {
   const openModal = () => setIsOpen(true);
   const closeModal = () => setIsOpen(false);
 
+
   return (
     <div style={{
       display: 'flex',
-      alignItems: 'center', // This centers the button vertically in the viewport
-      justifyContent: 'center', // This centers the button horizontally in the viewport
-      height: '100vh', // This ensures the container takes up the full viewport height
+      alignItems: 'center', 
+      justifyContent: 'center',
+      height: '20rem', 
     }}>
       
       <button onClick={openModal}>Click Me!</button>
@@ -33,7 +34,7 @@ export default function Modal() {
           alignItems: 'center',
           justifyContent: 'center',
         }}>
-          <button onClick={closeModal}>Close</button>
+          <button onClick={closeModal} style={{ backgroundColor: 'red', color: 'black', zIndex: 1001 }}>Close</button>
         </div>,
         modalRoot as Element
       )}

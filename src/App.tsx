@@ -41,6 +41,7 @@ function App() {
       <form
         style={{
           marginTop: '10px',
+          marginLeft: '10px'
         }}
         onSubmit={handleAddTask} // 5. Handle form submission
       >
