@@ -2,23 +2,23 @@ import React, { useState } from 'react';
 import Modal from './components/Modal'; // Import Modal component
 
 function App() {
-  // 1. Fix the state of `todos`
+
   const [todos, setTodos] = useState<string[]>([]);
 
-  // 4. Lift input text into a state
+  //  Lifts input text into a state
   const [taskInput, setTaskInput] = useState('');
 
-  // 5. Handle input change
+  //  Handles input change
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setTaskInput(e.target.value);
   };
 
-  // 5. Handle form submission to add new task
+  //  Handles form submission to add new task
   const handleAddTask = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (taskInput.trim() !== '') {
-      setTodos([...todos, taskInput]); // Add new task to todos array
-      setTaskInput(''); // Clear input field
+      setTodos([...todos, taskInput]); // Add new tasks
+      setTaskInput(''); // Clears input field
     }
   };
 
@@ -29,11 +29,12 @@ function App() {
   return (
     <>
       <ul>
-        {/* 3. Render tasks using map */}
+        {/*  Renders tasks using map */}
         {todos.map((todo, index) => (
           <li key={index}>
             {todo}
-            <button onClick={() => handleDeleteTask(index)}>X</button>
+            <button onClick={() => handleDeleteTask(index)}>X
+            </button>
           </li>
         ))}
       </ul>
@@ -41,12 +42,17 @@ function App() {
       <form
         style={{
           marginTop: '10px',
-          marginLeft: '10px'
+          marginLeft: '10px',
+          display: 'flex',
+          alignItems: 'center', 
+          justifyContent: 'center',
+          height: '7rem',
+          backgroundColor: 'lightpink',
         }}
-        onSubmit={handleAddTask} // 5. Handle form submission
+        onSubmit={handleAddTask} // 5. Adds task with form submission
       >
-        {/* 4. Lift input text into a state */}
-        <input
+        <input 
+          type="text"
           value={taskInput}
           onChange={handleInputChange} // 5. Handle input change
           placeholder="Enter task"

@@ -1,0 +1,42 @@
+.modal-content {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    
+}
+
+.modal-cont-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    color: rgb(124, 118, 166);
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    font-size: large;
+    font-family: "Gill Sans", sans-serif;
+    font-style: normal;
+  }
+
+button[type=submit] {
+    background-color: rgb(124, 118, 166);
+    color: white;
+    padding-left: 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    font-size: medium;
+    font-family: "Gill Sans", sans-serif;
+    font-style: normal;
+  }
