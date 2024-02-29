@@ -31,10 +31,9 @@ function App() {
       <ul>
         {/*  Renders tasks using map */}
         {todos.map((todo, index) => (
-          <li key={index}>
+          <li className = "lists" key={index}>
             {todo}
-            <button onClick={() => handleDeleteTask(index)}>X
-            </button>
+            <button className = "x-butt" onClick={() => handleDeleteTask(index)}>X</button>
           </li>
         ))}
       </ul>
@@ -46,7 +45,7 @@ function App() {
           display: 'flex',
           alignItems: 'center', 
           justifyContent: 'center',
-          height: '7rem',
+          height: '5rem',
           backgroundColor: 'lightpink',
         }}
         onSubmit={handleAddTask} // 5. Adds task with form submission
@@ -60,7 +59,6 @@ function App() {
         <button type="submit">Create Task</button> {/* 5. Form submission */}
       </form>
 
-      {/* 5. Use the Modal component */}
       <Modal />
     </>
   );

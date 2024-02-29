@@ -20,7 +20,7 @@ export default function Modal() {
     }}>
       
       {/* // BUTTON TO OPEN MODAL */}
-      <button onClick={openModal}>Click Me!</button>
+      <button onClick={openModal} className = "modal-buttons">Click Me!</button>
 
       {/* // CONTENT OF MODAL */}
       {isOpen && createPortal(

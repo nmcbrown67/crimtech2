@@ -1,3 +1,5 @@
+
+
 .modal-content {
     text-align: center;
     margin: auto;
@@ -39,4 +41,34 @@ button[type=submit] {
     font-size: medium;
     font-family: "Gill Sans", sans-serif;
     font-style: normal;
+  }
+
+  .modal-buttons {
+    background-color: rgb(197, 146, 197);
+    border: none;
+    cursor: pointer;
+    border-radius:5px;
+    height: 50px;
+    width: 10%;
+    font-size: medium;
+    font-family: "Gill Sans", sans-serif;
+    font-style: normal;
+    color: white;
+  }
+
+  .lists {
+    list-style-type: square;
+    font-size: large;
+    font-family: "Verdana", sans-serif;
+    font-style: normal;
+    color: rgb(105, 96, 105);
+    font-weight: bold;
+  }
+
+  .x-butt {
+    height: 20px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    font-weight: bold;
+    color: rgb(154, 33, 9)
   }
